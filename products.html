@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Font-Awesome-Pro/css/all.css">
+    <link rel="stylesheet" href="./sass/products.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <!-- <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" /> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <title>Products</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <img class="logo" src="img/logo.jpg" alt="logo">
+            <div class="menu">
+                <ul>
+                    <li class="icon-home"><a href="index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+                    <li class="nav-item"><a href="">Giới Thiệu</a></li>
+                    <li class="nav-item"><a href="">Hoạt Động Doanh Nghiệp</a></li>
+                    <li class="nav-item"><a href="products.html">Sản Phẩm</a></li>
+                    <li class="nav-item"><a href="">Tin Tức</a></li>
+                    <li class="nav-item"><a href="">Tuyển Dụng</a></li>
+                    <li class="nav-item"><a href="">Đối Tác</a></li>
+                    <li class="nav-item"><a href="">Video</a></li>
+                    <li class="nav-item"><a href="">Liên Hệ</a></li>
+                    <li class="nav-item"><a href=""><i class="fa-light fa-magnifying-glass"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="path">
+            <a href="index.html"><i class="fa-solid fa-house-chimney"></i>
+            <i id="icon-right" class="fa-solid fa-chevron-right"></i>
+            <a href=""> Danh mục sản phẩm</a>
+            </a>
+        </div>
+        
+        <div class="social-media-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></a>
+            <a href=""><i class="fa-solid fa-messages" style="color: #1bbb4b;"></i></a>
+        </div><br>
+
+        <div class="filter-container">
+            <div class="filter-left">
+                <a class="filter-icon">
+                    <i class="fa-solid fa-filter"></i>
+                    Bộ lọc
+                </a>
+                <select name="price" id="price">
+                    <option value="">Giá</option>
+                    <option value="100">100</option>
+                    <option value="200">200</option>
+                </select>
+                <select name="product-type" id="product-type">
+                    <option value="">Loại sản phẩm</option>
+                    <option value="sam">Sâm</option>
+                    <option value="dong-trung">Đông trùng</option>
+                </select>
+            </div>
+            <div class="filter-right">
+                Sắp xếp theo:
+                <select name="sort" id="sort">
+                    <option value="noi-bat">Nổi bật</option>
+                    <option value="ban-chay">Bán chạy</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="products">
+            <div class="product-row">
+                <div class="product">
+                    <img src="img/sp0.jpg" alt="">
+                    <a href="detail.html"><p>Bổ Gan Premium Liver Boost</p></a>
+                </div>
+                <img src="img/sp1.png" alt="">
+            </div>
+
+            <div class="product-row">
+                <div class="product">
+                    <img src="img/sp0.jpg" alt="">
+                    <p>Bổ lực sinh lý nam Kwangdong</p>
+                </div>
+                <img src="img/sp2.png" alt="">
+            </div>
+
+            <div class="product-row">
+                <div class="product">
+                    <img src="img/sp2.png" alt="">
+                    <p>Bổ Gan Premium Liver Boost</p>
+                </div>
+                <img src="img/sp3.png" alt="">
+            </div>
+
+            <div class="product-row">
+                <div class="product">
+                    <img src="img/sp0.jpg" alt="">
+                    <p>Bổ lực sinh lý nam Kwangdong</p>
+                </div>
+                <img src="img/sp1.png" alt="">
+            </div>
+
+            <div class="product-row">
+                <div class="product">
+                    <img src="img/sp3.png" alt="">
+                    <p>Bổ Gan Premium Liver Boost</p>
+                </div>
+                <img src="img/sp2.png" alt="">
+            </div>
+
+            <div class="product-row">
+                <div class="product">
+                    <img src="img/sp0.jpg" alt="">
+                    <p>Bổ lực sinh lý nam Kwangdong</p>
+                </div>
+                <img src="img/sp1.png" alt="">
+            </div>
+            <div class="product-row">
+                <div class="product">
+                    <img src="img/sp0.jpg" alt="">
+                    <p>Bổ Gan Premium Liver Boost</p>
+                </div>
+                <img src="img/sp1.png" alt="">
+            </div>
+            <div class="product-row">
+                <div class="product">
+                    <img src="img/sp0.jpg" alt="">
+                    <p>Bổ lực sinh lý nam Kwangdong</p>
+                </div>
+                <img src="img/sp3.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-9">
+                <h1 class="big-title">ĐỐI TÁC</h1>
+                <hr class="hr1">
+            </div>
+        </div><br>
+        <div class="box-slick">
+            <div id="row">
+                <div class="col-md-2 ">
+                    <div class="p-2">
+                        <img src="img/bogo.png" alt=""><br>
+                        <a>Nhà máy Bogo Shinyark</a><br>
+                        <p>Phụng sự người tiêu dùng, coi trọng công nghệ và đề cao sáng tạo là 3 giá trị cốt lõi
+                            xuyên suốt trong lịch sử gần 20 năm xây dựng và phát triển của Bogo Shinyak – tên tuổi
+                            hàng đầu trong ngành thực phẩm chức năng ở Hàn Quốc.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 ">
+                    <div class="p-2">
+                        <img src="img/gaesung.png" alt=""><br>
+                        <a>Nhà máy Geasung Sang In</a><br>
+                        <p>Nhà máy Gaesung Sang In nổi tiếng với các sản phẩm An cung ngưu hoàng, cao hồng sâm
+                            Goryo, nước hồng sâm nguyên chất kết hợp thảo dược quý như linh chi, nhung hươu,
+                            saffron,… với quy mô lớn, liên tục tăng trưởng 2 con số trong nhiều năm qua.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 ">
+                    <div class="p-2">
+                        <img src="img/kgs.png" alt=""><br>
+                        <a>Nhà máy KGS</a><br>
+                        <p>Korean Ginseng Story (KGS), là thương hiệu nhân sâm và các sản phẩm chăm sóc sức khỏe có
+                            nguồn gốc thảo dược hàng đầu của Hàn Quốc với lịch sử hình thành và phát triển mạnh mẽ
+                            trong hơn một phần tư thế kỷ qua.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 ">
+                    <div class="p-2">
+                        <img src="img/kgs.png" alt=""><br>
+                        <a>Nhà máy KGS</a><br>
+                        <p>Korean Ginseng Story (KGS), là thương hiệu nhân sâm và các sản phẩm chăm sóc sức khỏe có
+                            nguồn gốc thảo dược hàng đầu của Hàn Quốc với lịch sử hình thành và phát triển mạnh mẽ
+                            trong hơn một phần tư thế kỷ qua.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 ">
+                    <div class="p-2">
+                        <img src="img/kgs.png" alt=""><br>
+                        <a>Nhà máy KGS</a><br>
+                        <p>Korean Ginseng Story (KGS), là thương hiệu nhân sâm và các sản phẩm chăm sóc sức khỏe có
+                            nguồn gốc thảo dược hàng đầu của Hàn Quốc với lịch sử hình thành và phát triển mạnh mẽ
+                            trong hơn một phần tư thế kỷ qua.</p>
+                    </div>
+                </div>
+            </div><br><br><br>
+        </div>
+
+        <div class="row">
+            <div class="col-md-9">
+                <h1 class="big-title">CHỨNG NHẬN SẢN PHẨM</h1>
+                <hr class="hr2">
+            </div>
+        </div><br>
+
+        <div class="certification">
+            <div class="certification-box">
+                <div class="col-md-3">
+                    <div class="p-2">
+                        <img src="img/quockyhan.jpg" alt="">
+                        <p>Dòng sản phẩm sử dụng nguyên liệu nội địa</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-2">
+                        <img src="img/ss.jpg" alt="">
+                        <p>Dòng sản phẩm sử dụng nguyên liệu nội địa</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-2">
+                        <img src="img/us.jpg" alt="">
+                        <p>Dòng sản phẩm sử dụng nguyên liệu nội địa</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-2">
+                        <img src="img/gmp.jpg" alt="">
+                        <p>Dòng sản phẩm sử dụng nguyên liệu nội địa</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-2">
+                        <img src="img/cn01.png" alt="">
+                        <p>Dòng sản phẩm sử dụng nguyên liệu nội địa</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-2">
+                        <img src="img/cn01.png" alt="">
+                        <p>Dòng sản phẩm sử dụng nguyên liệu nội địa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <!-- Cột bên trái -->
+            <div class="footer-left">
+                <img src="img/logo.jpg" alt="Company Logo" class="footer-logo">
+                <h2>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ XUẤT NHẬP KHẨU KOREA GREEN FOOD</h2>
+                <p>Địa chỉ: Số 123, Đường ABC, Quận XYZ, TP HCM</p>
+                <p>Số điện thoại: 0123 456 789</p>
+                <p>Email: contact@company.com</p>
+                <p>Mã số thuế: 123456789</p>
+                <img src="img/tick.png" alt="" class="footer-logo">
+            </div>
+
+            <!-- Cột bên phải -->
+            <div class="footer-right">
+                <h2>THÔNG TIN</h2>
+                <ul>
+                    <li><a href="#">Giới Thiệu</a></li>
+                    <li><a href="#">Tin Tức</a></li>
+                    <li><a href="#">Sản Phẩm</a></li>
+                    <li><a href="#">Tuyển Dụng</a></li>
+                    <li><a href="#">Đối Tác</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#row').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1300,
+                infinite: true,
+                arrows: true,
+                prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+            });
+
+            $('.certification-box').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1300,
+                infinite: true,
+                arrows: true,
+                prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+            });
+
+
+
+        });
+    </script>
+</body>
+
+</html>
