@@ -3,6 +3,93 @@
 $color-text: #373435;
 $color-name: #2d8b37;
 
+@media only  screen and (max-width: 46.1875em) { 
+    .logo{
+      display: none;
+    }
+    .icon-home{
+      display: none ;
+    }
+    .col-md-3{
+        height: 0px !important;
+    }
+    .sidebar{
+      position:absolute !important;
+      padding: 5px !important;
+    }
+    .social-media-icons{
+        display: none !important;
+      }
+      .path {
+        padding-top: 10% !important;
+        a{
+            font-size: 12px;
+        }
+      }
+      .slick-track{
+        display: table-caption !important;
+      }
+    .menu .nav-item a{
+      font-weight:normal !important;
+      font-size: 12px !important;
+      padding: 0 !important;
+      margin-bottom: 4px !important;
+      display:table-cell !important;
+      width: 100%;
+    }
+    .icon-bars{
+      cursor: pointer;
+      list-style: none;
+      font-size: 25px;
+      padding: 5px;
+  
+      i{
+        color: #000;
+      }
+    }
+    .autoplay{
+      padding: 0 !important;
+    }
+  
+    .hr1::after {
+      width: 25% !important;
+  }
+  
+  .social-media-icons a{
+    display: none !important;
+  }
+  .certification{
+    display: none !important;
+  }
+  .footer-content{
+    display: block !important;
+  }
+  
+  footer .footer-content .footer-left, footer .footer-content .footer-right {
+    width: 100% !important;
+  }
+  footer .footer-content .footer-right {
+    padding: 0 !important;
+  }
+  }
+  @media only  screen and (min-width: 46.25em) and (max-width: 63.9375em) { 
+  
+    .col-md-2 img {
+      width: 135px !important;
+  }
+  .col-md-4{
+    width: 100% !important;
+    height: 500px;
+  }
+  .active{
+    display: block !important;
+  }
+  .recruitment{
+    display: block !important;
+  }
+   
+  }
+
 * {
     font-family: "Roboto", sans-serif;
     padding: 0;
