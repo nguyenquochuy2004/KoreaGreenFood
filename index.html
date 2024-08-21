@@ -10,13 +10,13 @@
     <link rel="stylesheet" type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" /> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <title>Home</title>
 </head>
 
 <body>
     <div class="main">
-        <li class="icon-bars"><a href=""><i class="fa-solid fa-bars"></i></a></li>
+        <!-- <li class="icon-bars"><a href=""><i class="fa-solid fa-bars"></i></a></li> -->
         <div class="sidebar">
             <img class="logo" src="img/logo.jpg" alt="logo">
             <div class="menu">
@@ -364,7 +364,6 @@
 
     <footer>
         <div class="footer-content">
-            <!-- Cột bên trái -->
             <div class="footer-left">
                 <img src="img/logo.jpg" alt="Company Logo" class="footer-logo">
                 <h2>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ XUẤT NHẬP KHẨU KOREA GREEN FOOD</h2>
@@ -374,8 +373,6 @@
                 <p>Mã số thuế: 123456789</p>
                 <img src="img/tick.png" alt="" class="footer-logo">
             </div>
-    
-            <!-- Cột bên phải -->
             <div class="footer-right">
                 <h2>THÔNG TIN</h2>
                 <ul>
@@ -399,10 +396,17 @@
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 1000,
-                // dots: true,                 // Hiển thị các dấu chấm chỉ thị
+                // dots: true,         
                 infinite: true,           // Vòng lặp vô hạn
                 arrows: false,             // mũi tên điều hướng
             });
+
+        $(document).ready(function(){
+            $('.icon-bars').click(function(){
+                $('menu').slideToggle()
+            });
+        })
+            
             $('#row').slick({
                 slidesToShow: 4,
                 slidesToScroll: 1,
@@ -411,7 +415,32 @@
                 infinite: true,
                 arrows: true,
                 prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: false
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             });
 
             $('.certification-box').slick({
@@ -422,7 +451,32 @@
                 infinite: true,
                 arrows: true,
                 prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: false
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             });
 
             $('#product-row').slick({
@@ -433,7 +487,32 @@
                 infinite: true,
                 arrows: true,
                 prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: false
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             });
             $('#news').slick({
                 slidesToShow: 4,
@@ -443,7 +522,32 @@
                 infinite: true,
                 arrows: true,
                 prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: false
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             });
 
 
