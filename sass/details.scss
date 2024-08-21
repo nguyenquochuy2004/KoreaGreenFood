@@ -239,6 +239,8 @@ $color-name: #2d8b37;
 
         img {
             width: 100%;
+            border: solid rgb(232, 231, 231) 1px;
+            height: 100px;
         }
 
         .slick-slide {
@@ -507,6 +509,9 @@ $color-name: #2d8b37;
   
     .certification-box {
       margin-left: 25px;
+      .p-2{
+        height: 300px;
+       }
     }
   }
   .col-md-3 {

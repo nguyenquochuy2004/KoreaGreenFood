@@ -407,6 +407,9 @@
 .certification .certification-box {
   margin-left: 25px;
 }
+.certification .certification-box .p-2 {
+  height: 310px;
+}
 
 .col-md-3 img {
   margin: 0 auto;

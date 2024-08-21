@@ -213,6 +213,8 @@
 }
 .product-image .slider-nav img {
   width: 100%;
+  border: solid rgb(232, 231, 231) 1px;
+  height: 100px;
 }
 .product-image .slider-nav .slick-slide {
   margin-bottom: 10px;
@@ -456,6 +458,9 @@
 }
 .certification .certification-box {
   margin-left: 25px;
+}
+.certification .certification-box .p-2 {
+  height: 300px;
 }
 
 .col-md-3 img {
