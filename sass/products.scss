@@ -157,7 +157,6 @@ $color-name: #2d8b37;
 }
 
 .main {
-  //   width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -370,6 +369,9 @@ $color-name: #2d8b37;
         font-weight: bold;
         margin: 0 0 0 15px;
         font-size: 14px;
+        &:hover{
+          color: #19c406;
+        }
       }
     }
 

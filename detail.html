@@ -172,6 +172,12 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, provident dolor deserunt
                         amet velit ratione eum voluptatum atque cupiditate rerum cumque commodi odit, est ut accusantium
                         fugiat dolores, maxime unde!
+                        Beatae possimus harum, repellendus quae cum quidem, esse, nemo quibusdam accusamus enim omnis
+                        placeat tempore? Sit iusto nostrum quisquam consectetur eius accusamus libero reiciendis
+                        voluptates rerum nobis doloremque, illum ad!
+                        Autem natus dolores voluptate temporibus aliquam minima! Similique quas, repudiandae quis eaque
+                        facere soluta ea, perspiciatis reprehenderit odio tenetur ex mollitia obcaecati provident ipsa
+                        molestiae voluptas possimus cumque hic ipsum!
                     </p>
                     <button class="toggle-button">Xem thêm <i class="fa-solid fa-caret-down"></i></button>
                 </div>
@@ -181,6 +187,12 @@
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eveniet commodi voluptatem fuga
                         quaerat error numquam, nam aperiam repudiandae in unde mollitia vel, eum porro dignissimos
                         consequatur iure nobis quibusdam!
+                        Beatae possimus harum, repellendus quae cum quidem, esse, nemo quibusdam accusamus enim omnis
+                        placeat tempore? Sit iusto nostrum quisquam consectetur eius accusamus libero reiciendis
+                        voluptates rerum nobis doloremque, illum ad!
+                        Autem natus dolores voluptate temporibus aliquam minima! Similique quas, repudiandae quis eaque
+                        facere soluta ea, perspiciatis reprehenderit odio tenetur ex mollitia obcaecati provident ipsa
+                        molestiae voluptas possimus cumque hic ipsum!
                     </p>
                     <button class="toggle-button">Xem thêm <i class="fa-solid fa-caret-down"></i></button>
                 </div>
@@ -353,16 +365,19 @@
         });
 
         //xem them
-        document.querySelector('.toggle-button').addEventListener('click', function () {
-            var textContainer = document.querySelector('.text-container');
-            textContainer.classList.toggle('expanded');
+        document.querySelectorAll('.toggle-button').forEach(button => {
+            button.addEventListener('click', function () {
+                var textContainer = this.parentElement;
+                textContainer.classList.toggle('expanded');
 
-            if (textContainer.classList.contains('expanded')) {
-                this.innerHTML = 'Thu gọn <i class="fa-solid fa-caret-up"></i>';
-            } else {
-                this.innerHTML = 'Xem thêm <i class="fa-solid fa-caret-down"></i>';
-            }
+                if (textContainer.classList.contains('expanded')) {
+                    this.innerHTML = 'Thu gọn <i class="fa-solid fa-caret-up"></i>';
+                } else {
+                    this.innerHTML = 'Xem thêm <i class="fa-solid fa-caret-down"></i>';
+                }
+            });
         });
+
 
 
 

@@ -117,14 +117,13 @@ footer .footer-content .footer-right {
   z-index: 1000;
   
   a {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.395);
     display: block;
     border-radius: 50px;
     text-align: center;
-    margin-top: 5px;
     width: 50px;
     height: 50px;
-    
+    background-color: rgb(255, 255, 255);
     i {
       font-size: 30px;
       text-align: center;
@@ -148,7 +147,6 @@ footer .footer-content .footer-right {
   font-size: 20px;
   color: #000;
   text-decoration: none;
-  // display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px 10px;
@@ -200,6 +198,7 @@ footer .footer-content .footer-right {
 
 .row {
   justify-content: center;
+
 }
 
 .box-slick {
@@ -209,7 +208,10 @@ footer .footer-content .footer-right {
 }
 
 .p-2 {
-  height: 250px;
+  height: 270px;
+  p{
+    margin-top: 20px;
+  }
 }
 
 .col-md-2 {
@@ -318,6 +320,19 @@ footer .footer-content .footer-right {
   top: 50%;
   right: -5%;
   transform: translateY(-50%);
+  z-index: 1;
+  // position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: hsl(236, 32%, 26%);
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+
+  
   
   &.slick-prev {
     left: -5%;

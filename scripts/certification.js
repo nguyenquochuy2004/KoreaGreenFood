@@ -2,7 +2,7 @@ $('.certification-box').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1300,
+    autoplaySpeed: 1200,
     infinite: true,
     arrows: true,
     prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",

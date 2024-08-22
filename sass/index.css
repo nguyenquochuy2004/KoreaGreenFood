@@ -105,13 +105,13 @@
   z-index: 1000;
 }
 .social-media-icons a {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.395);
   display: block;
   border-radius: 50px;
   text-align: center;
-  margin-top: 5px;
   width: 50px;
   height: 50px;
+  background-color: rgb(255, 255, 255);
 }
 .social-media-icons a i {
   font-size: 30px;
@@ -187,7 +187,10 @@
 }
 
 .p-2 {
-  height: 250px;
+  height: 270px;
+}
+.p-2 p {
+  margin-top: 20px;
 }
 
 .col-md-2 {
@@ -288,6 +291,16 @@
   top: 50%;
   right: -5%;
   transform: translateY(-50%);
+  z-index: 1;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: hsl(236, 32%, 26%);
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
 }
 .slick-arrow.slick-prev {
   left: -5%;

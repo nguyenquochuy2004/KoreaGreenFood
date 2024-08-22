@@ -266,7 +266,7 @@
   color: white;
   outline: none;
   border: none;
-  background-color: #c33333;
+  background-color: #e74c3c;
 }
 .info .button-detail #bt1::before {
   content: "";
@@ -276,7 +276,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: hsl(0, 91%, 51%);
+  background: linear-gradient(#e74c3c, #f1c40f);
   transform-origin: center right;
   transform: scaleX(0);
   transition: transform 0.25s ease-in-out;
@@ -307,7 +307,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgb(6, 190, 52);
+  background: linear-gradient(#2D8B37, #C5D557);
   transform-origin: center right;
   transform: scaleX(0);
   transition: transform 0.25s ease-in-out;
@@ -375,11 +375,39 @@
 .toggle-button {
   display: block;
   margin: 10px auto 0;
-  color: #2183DD;
+  color: #1967dd;
   border: none;
   padding: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  padding: 0.5em 1em;
+  outline: none;
+}
+
+.toggle-button::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(#2D8B37, #C5D557);
+  transform-origin: center bottom;
+  transform: scaleY(0);
+  transition: transform 0.25s ease-in-out;
+}
+
+.toggle-button:hover {
+  cursor: pointer;
+}
+
+.toggle-button:hover::before {
+  transform-origin: center top;
+  transform: scaleY(1);
 }
 
 #product-row {
