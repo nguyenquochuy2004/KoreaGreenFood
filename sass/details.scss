@@ -299,20 +299,74 @@ $color-name: #2d8b37;
         }
 
         #bt1 {
-            background-color: rgb(211, 50, 50);
+            z-index: 1;
+            position: relative;
+            font-size: inherit;
+            font-family: inherit;
+            color: white;
+            outline: none;
+            border: none;
+            background-color: #c33333;
+          }
+          
+          #bt1::before {
+            content: '';
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: hsl(0, 91%, 51%);
+            transform-origin: center right;
+            transform: scaleX(0);
+            transition: transform 0.25s ease-in-out;
+            border-radius: 50px;
+          }
+          
+          #bt1:hover {
+            cursor: pointer;
+          }
+          
+          #bt1:hover::before {
+            transform-origin: center left;
+            transform: scaleX(1);
+          }
 
-            &:hover {
-                background-color: rgb(255, 0, 0);
-            }
-        }
-
-        #bt2 {
-            background-color: #2d8b37;
-
-            &:hover {
-                background-color: #07b819;
-            }
-        }
+          #bt2 {
+            z-index: 1;
+            position: relative;
+            font-size: inherit;
+            font-family: inherit;
+            color: white;
+            outline: none;
+            border: none;
+            background-color: $color-name;
+          }
+          
+          #bt2::before {
+            content: '';
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgb(6, 190, 52);
+            transform-origin: center right;
+            transform: scaleX(0);
+            transition: transform 0.25s ease-in-out;
+            border-radius: 50px;
+          }
+          
+          #bt2:hover {
+            cursor: pointer;
+          }
+          
+          #bt2:hover::before {
+            transform-origin: center left;
+            transform: scaleX(1);
+          }
     }
 
     .row{
