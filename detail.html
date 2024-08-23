@@ -87,7 +87,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-6"><img class="img-one" src="img/sp2.png" alt=""></div> -->
                 <div class="info col-md-6">
                     <p style="font-size: 20px; font-weight: bold;">Cao hồng sâm Nonghyup Hàn Quốc</p>
                     <p>Mã SP: MT-VO-DE-30-T</p>
@@ -97,7 +96,7 @@
                     </div>
                     <div class="row">
                         <div class="in4 col-md-6">Danh mục: </div>
-                        <div style="color: #2183DD;" class="in4 col-md-6">Korea Green Food </div>
+                        <div class="in4 col-md-6" style="color: #2183DD;">Korea Green Food </div>
 
                         <div class="in4 col-md-6">Quy cách:: </div>
                         <div class="in4 col-md-6">Hộp 2 Vỉ x 10 viên </div>
@@ -110,8 +109,14 @@
 
                         <div class="in4 col-md-3">Số lượng: </div>
                         <div class="in4 col-md-9">
-                            <input type="number" id="number" min="1" max="100" value="1">
+                            <div style="display: flex; align-items: center;">
+                                <button id="decrease" style="width: 28px; height: 28px; background-color: white;">-</button>
+                                <input  id="number" min="1" max="100" value="1"
+                                    style="text-align: center; width: 50px;">
+                                <button id="increase" style="width: 28px; height: 28px; background-color: white;">+</button>
+                            </div>
                         </div>
+
                         <div class="button-detail">
                             <div class="in4 col-md-6"><button id="bt1"> Tư vấn mua hàng</button></div>
                             <div class="in4 col-md-6"><button id="bt2"> Liên hệ tư vấn</button></div>
@@ -378,6 +383,21 @@
             });
         });
 
+        //số lượng
+        document.getElementById('increase').addEventListener('click', function () {
+            var quantityInput = document.getElementById('number');
+            var currentValue = parseInt(quantityInput.value);
+            if (currentValue < parseInt(quantityInput.max)) {
+                quantityInput.value = currentValue + 1;
+            }
+        });
+        document.getElementById('decrease').addEventListener('click', function () {
+            var quantityInput = document.getElementById('number');
+            var currentValue = parseInt(quantityInput.value);
+            if (currentValue > parseInt(quantityInput.min)) {
+                quantityInput.value = currentValue - 1;
+            }
+        });
 
 
 

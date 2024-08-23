@@ -18,7 +18,22 @@
 
 <body>
     <div class="main">
-        <!-- <li class="icon-bars"><a href=""><i class="fa-solid fa-bars"></i></a></li> -->
+        <div class="menu-button"><i class="fa-solid fa-bars"></i></div>
+        <div class="overlay"></div>
+    
+        <div class="menu-mb">
+            <li class="nav-item"><a href="">Giới Thiệu</a></li>
+            <li class="nav-item"><a href="detail.html">Hoạt Động Doanh Nghiệp</a></li>
+            <li class="nav-item"><a href="products.html">Sản Phẩm</a></li>
+            <li class="nav-item"><a href="">Tin Tức</a></li>
+            <li class="nav-item"><a href="">Tuyển Dụng</a></li>
+            <li class="nav-item"><a href="">Đối Tác</a></li>
+            <li class="nav-item"><a href="">Video</a></li>
+            <li class="nav-item"><a href="">Liên Hệ</a></li>
+            <li class="nav-item"><a href=""><i class="fa-light fa-magnifying-glass"></i></a></li>
+        </div>
+
+
         <div class="sidebar">
             <img class="logo" src="img/logo.jpg" alt="logo">
             <div class="menu">
@@ -402,7 +417,8 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 autoplay: true,
-                autoplaySpeed: 1000,
+                autoplaySpeed: 1900, // thời gian để chuyển slide
+                speed:2500, // tốc độ chuyển đổi giữa các slide
                 // dots: true,         
                 infinite: true,           // Vòng lặp vô hạn
                 arrows: false,             // mũi tên điều hướng
@@ -445,6 +461,16 @@
             });
 
 
+        });
+
+        $(".menu-button").click(function () {
+            $(".menu-mb").toggleClass("active");
+            $(".overlay").toggleClass("active");
+        });
+
+        $(".overlay").click(function () {
+            $(".menu-mb").removeClass("active");
+            $(".overlay").removeClass("active");
         });
     </script>
 

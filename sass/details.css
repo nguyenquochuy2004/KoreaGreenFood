@@ -58,7 +58,8 @@
   .footer-content {
     display: block !important;
   }
-  footer .footer-content .footer-left, footer .footer-content .footer-right {
+  footer .footer-content .footer-left,
+  footer .footer-content .footer-right {
     width: 100% !important;
   }
   footer .footer-content .footer-right {
@@ -307,7 +308,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(#2D8B37, #C5D557);
+  background: linear-gradient(#2d8b37, #c5d557);
   transform-origin: center right;
   transform: scaleX(0);
   transition: transform 0.25s ease-in-out;
@@ -395,7 +396,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(#2D8B37, #C5D557);
+  background: linear-gradient(#2d8b37, #c5d557);
   transform-origin: center bottom;
   transform: scaleY(0);
   transition: transform 0.25s ease-in-out;
@@ -426,7 +427,7 @@
 
 .product-detail a {
   width: 150px;
-  color: #2D8B37;
+  color: #2d8b37;
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
@@ -455,7 +456,7 @@
 .slick-prev,
 .slick-next {
   background: #ffffff !important;
-  color: #C5D557;
+  color: #c5d557;
   border: none;
   width: 40px;
   height: 40px;
@@ -480,7 +481,7 @@
   padding-top: 3px;
   margin-top: 34px;
   font-size: 12px;
-  background: linear-gradient(to right, #2D8B37, #C5D557);
+  background: linear-gradient(to right, #2d8b37, #c5d557);
   color: white;
   width: 92px;
   height: 23px;
@@ -494,7 +495,7 @@
   margin-top: 30px;
   font-size: 24px;
   font-weight: bold;
-  color: #2D8B37;
+  color: #2d8b37;
 }
 
 .hr5 {
@@ -511,7 +512,7 @@
   left: 15%;
   width: 85%;
   height: 100%;
-  background-color: #E7E7E7;
+  background-color: #e7e7e7;
 }
 
 .hr5::after {
@@ -521,7 +522,7 @@
   left: 0;
   width: 15%;
   height: 100%;
-  background-color: #2D8B37;
+  background-color: #2d8b37;
 }
 
 .hr6 {
@@ -538,7 +539,7 @@
   margin-left: 25px;
 }
 .certification .certification-box .p-2 {
-  height: 300px;
+  height: 250px;
 }
 
 .col-md-3 img {
