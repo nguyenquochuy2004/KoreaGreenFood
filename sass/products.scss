@@ -3,18 +3,22 @@
 $color-text: #373435;
 $color-name: #2d8b37;
 
+
+
 @media only screen and (max-width: 46.1875em) {
   .logo {
     display: none;
   }
 
-  .icon-home {
+  .sidebar{
     display: none !important;
   }
 
-  .sidebar {
-    position: absolute !important;
-    padding: 5px !important;
+  .menu-button {
+    display: block !important;
+}
+  .icon-home {
+    display: none !important;
   }
 
   .products .product-row .product img {
@@ -112,6 +116,13 @@ $color-name: #2d8b37;
     height: 500px;
   }
 
+  .sidebar{
+    display: none !important;
+  }
+
+  .menu-button {
+    display: block !important;
+}
   .active {
     display: block !important;
   }
@@ -155,6 +166,66 @@ $color-name: #2d8b37;
   display: flex;
   flex-direction: column;
 }
+.menu-mb {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #3c9d3e;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+  z-index: 1000;
+}
+
+.menu-mb.active {
+  left: 0;
+}
+
+.menu-mb li {
+  list-style-type: none;
+  padding: 10px 15px;
+}
+
+.menu-mb li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.menu-mb li a:hover {
+  background: none ;
+  color: #c5d557;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.07);
+  z-index: 99;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.active {
+  display: block;
+}
+.menu-button {
+  z-index: 9999 !important;
+  display: none;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 
 .sidebar {
   position: fixed;

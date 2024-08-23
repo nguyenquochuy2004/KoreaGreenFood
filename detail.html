@@ -19,6 +19,20 @@
 </head>
 
 <body>
+    <div class="menu-button"><i class="fa-solid fa-bars"></i></div>
+    <div class="overlay"></div>
+
+    <div class="menu-mb">
+        <li class="nav-item"><a href="">Giới Thiệu</a></li>
+        <li class="nav-item"><a href="detail.html">Hoạt Động Doanh Nghiệp</a></li>
+        <li class="nav-item"><a href="products.html">Sản Phẩm</a></li>
+        <li class="nav-item"><a href="">Tin Tức</a></li>
+        <li class="nav-item"><a href="">Tuyển Dụng</a></li>
+        <li class="nav-item"><a href="">Đối Tác</a></li>
+        <li class="nav-item"><a href="">Video</a></li>
+        <li class="nav-item"><a href="">Liên Hệ</a></li>
+        <li class="nav-item"><a href=""><i class="fa-light fa-magnifying-glass"></i></a></li>
+    </div>
 
     <div class="sidebar">
         <div class="container">
@@ -118,8 +132,8 @@
                         </div>
 
                         <div class="button-detail">
-                            <div class="in4 col-md-6"><button id="bt1"> Tư vấn mua hàng</button></div>
-                            <div class="in4 col-md-6"><button id="bt2"> Liên hệ tư vấn</button></div>
+                            <div class="in4 col-sm-6"><button id="bt1"> Tư vấn mua hàng</button></div>
+                            <div class="in4 col-sm-6"><button id="bt2"> Liên hệ tư vấn</button></div>
                         </div>
 
 
@@ -399,6 +413,15 @@
             }
         });
 
+        $(".menu-button").click(function () {
+            $(".menu-mb").toggleClass("active");
+            $(".overlay").toggleClass("active");
+        });
+
+        $(".overlay").click(function () {
+            $(".menu-mb").removeClass("active");
+            $(".overlay").removeClass("active");
+        });
 
 
     </script>

@@ -4,44 +4,30 @@
   .logo {
     display: none;
   }
+  .sidebar {
+    display: none !important;
+  }
+  .menu-button {
+    display: block !important;
+  }
   .icon-home {
     display: none;
   }
   .col-md-3 {
     height: 0px !important;
   }
-  .sidebar {
-    position: absolute !important;
-    padding: 5px !important;
-  }
   .social-media-icons {
     display: none !important;
   }
   .path {
     padding-top: 10% !important;
+    margin-left: -5px;
   }
   .path a {
     font-size: 12px;
   }
   .slick-track {
     display: table-caption !important;
-  }
-  .menu .nav-item a {
-    font-weight: normal !important;
-    font-size: 12px !important;
-    padding: 0 !important;
-    margin-bottom: 4px !important;
-    display: table-cell !important;
-    width: 100%;
-  }
-  .icon-bars {
-    cursor: pointer;
-    list-style: none;
-    font-size: 25px;
-    padding: 5px;
-  }
-  .icon-bars i {
-    color: #000;
   }
   .autoplay {
     padding: 0 !important;
@@ -74,6 +60,12 @@
     width: 100% !important;
     height: 500px;
   }
+  .sidebar {
+    display: none !important;
+  }
+  .menu-button {
+    display: block !important;
+  }
   .active {
     display: block !important;
   }
@@ -92,9 +84,66 @@
   max-width: 1100px !important;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
+.menu-mb {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #3c9d3e;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+  z-index: 1000;
+}
+
+.menu-mb.active {
+  left: 0;
+  display: block !important;
+}
+
+.menu-mb li {
+  list-style-type: none;
+  padding: 10px 15px;
+}
+
+.menu-mb li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.menu-mb li a:hover {
+  background: none;
+  color: #c5d557;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.07);
+  z-index: 99;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.menu-button {
+  z-index: 9999;
+  display: none;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1001;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .sidebar {
@@ -253,8 +302,9 @@
   display: flex;
 }
 .info .button-detail button {
+  margin-left: -5px;
   padding: 7px;
-  width: 150px;
+  width: 140px;
   color: white;
   border-radius: 50px;
   border: none;
