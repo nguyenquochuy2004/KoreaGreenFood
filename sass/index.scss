@@ -56,14 +56,23 @@
   cursor: pointer;
   padding: 10px;
   z-index: 1000;
-  position: fixed;
+  
   top: 0;
   left: 0;
 }
 
 @media only screen and (max-width: 46.1875em) {
-  .logo {
-    display: none;
+  .recruitment .recruitment-box{
+    margin-bottom: 20px;
+  }
+  .logo-mb{
+    margin: 0 auto;
+    display: block !important;
+  }
+  .logo-mb img{
+    width: 100px;
+    position: absolute;
+    margin-left: -40px;
   }
   .sidebar{
     display: none !important;
@@ -117,6 +126,17 @@
     display: none !important;
   }
 
+  .logo-mb{
+    margin: 0 auto;
+    display: block !important;
+
+  }
+  .logo-mb img{
+    width: 100px;
+    position: absolute;
+    margin-left: -40px;
+  }
+
   .menu-button{
     display: block !important;
   }
@@ -145,6 +165,10 @@
   display: flex;
   flex-direction: column;
 }
+
+    .logo-mb{
+      display: none;
+    }
 
 .social-media-icons {
   position: fixed;
@@ -242,7 +266,7 @@
 .autoplay {
   width: 100%;
   margin: 0 auto;
-  padding-top: 50px;
+  // padding-top: 50px;
 
   img {
     width: 100%;

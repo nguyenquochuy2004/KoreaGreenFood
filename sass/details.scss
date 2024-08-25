@@ -3,10 +3,17 @@
 $color-text: #373435;
 $color-name: #2d8b37;
 
+
 @media only screen and (max-width: 46.1875em) {
-  .logo {
-    display: none;
-  }
+    .logo-mb{
+      margin: 0 auto;
+    display: block !important;
+    }
+    .logo-mb img{
+      width: 100px;
+      position: absolute;
+      margin-left: -40px;
+    }
   .sidebar{
     display: none !important;
   }
@@ -28,8 +35,7 @@ $color-name: #2d8b37;
   }
 
   .path {
-    padding-top: 10% !important;
-    margin-left: -5px;
+    margin-top: 0px !important;
 
     a {
       font-size: 12px;
@@ -70,6 +76,16 @@ $color-name: #2d8b37;
 }
 
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+
+  .logo-mb{
+    margin: 0 auto;
+    display: block !important;
+  }
+  .logo-mb img{
+    width: 100px;
+    position: absolute;
+    margin-left: -40px;
+  }
   .col-md-2 img {
     width: 135px !important;
   }
@@ -81,6 +97,10 @@ $color-name: #2d8b37;
 
   .sidebar{
     display: none !important;
+  }
+
+  .path {
+    margin-top: 0px !important;
   }
 
   .menu-button {
@@ -164,7 +184,7 @@ $color-name: #2d8b37;
   cursor: pointer;
   padding: 10px;
   z-index: 1001;
-  position: fixed;
+  // position: fixed;
   top: 0;
   left: 0;
 }
@@ -189,6 +209,15 @@ $color-name: #2d8b37;
     width: auto;
     height: 60px;
   }
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-mb{
+  display: none;
 }
 
 .social-media-icons {

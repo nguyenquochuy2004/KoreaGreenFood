@@ -6,8 +6,14 @@ $color-name: #2d8b37;
 
 
 @media only screen and (max-width: 46.1875em) {
-  .logo {
-    display: none;
+  .logo-mb{
+    margin: 0 auto;
+    display: block !important;
+  }
+  .logo-mb img{
+    width: 100px;
+    position: absolute;
+    margin-left: -40px;
   }
 
   .sidebar{
@@ -33,7 +39,7 @@ $color-name: #2d8b37;
   }
 
   .path {
-    padding-top: 10% !important;
+    margin-top: 0px !important;
   }
 
   .slick-arrow {
@@ -107,6 +113,16 @@ $color-name: #2d8b37;
 }
 
 @media only screen and (min-width: 46.25em) and (max-width: 1024px) {
+  .logo-mb{
+    margin: 0 auto;
+    display: block !important;
+  }
+  .logo-mb img{
+    width: 100px;
+    position: absolute;
+    margin-left: -40px;
+  }
+
   .col-md-2 img {
     width: 135px !important;
   }
@@ -138,7 +154,7 @@ $color-name: #2d8b37;
   }
 
   .path {
-    margin-top: 8% !important;
+    margin-top: 0px !important;
   }
 
   .menu .nav-item a {
@@ -165,6 +181,9 @@ $color-name: #2d8b37;
 .main {
   display: flex;
   flex-direction: column;
+}
+.logo-mb{
+  display: none;
 }
 .menu-mb {
   position: fixed;
@@ -221,7 +240,7 @@ $color-name: #2d8b37;
   cursor: pointer;
   padding: 10px;
   z-index: 1000;
-  position: fixed;
+  // position: fixed;
   top: 0;
   left: 0;
 }

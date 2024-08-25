@@ -56,14 +56,22 @@
   cursor: pointer;
   padding: 10px;
   z-index: 1000;
-  position: fixed;
   top: 0;
   left: 0;
 }
 
 @media only screen and (max-width: 46.1875em) {
-  .logo {
-    display: none;
+  .recruitment .recruitment-box {
+    margin-bottom: 20px;
+  }
+  .logo-mb {
+    margin: 0 auto;
+    display: block !important;
+  }
+  .logo-mb img {
+    width: 100px;
+    position: absolute;
+    margin-left: -40px;
   }
   .sidebar {
     display: none !important;
@@ -107,6 +115,15 @@
   .sidebar {
     display: none !important;
   }
+  .logo-mb {
+    margin: 0 auto;
+    display: block !important;
+  }
+  .logo-mb img {
+    width: 100px;
+    position: absolute;
+    margin-left: -40px;
+  }
   .menu-button {
     display: block !important;
   }
@@ -131,6 +148,10 @@
 .main {
   display: flex;
   flex-direction: column;
+}
+
+.logo-mb {
+  display: none;
 }
 
 .social-media-icons {
@@ -222,7 +243,6 @@
 .autoplay {
   width: 100%;
   margin: 0 auto;
-  padding-top: 50px;
 }
 .autoplay img {
   width: 100%;
