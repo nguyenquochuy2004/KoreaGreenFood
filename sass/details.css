@@ -26,7 +26,7 @@
     display: none !important;
   }
   .path {
-    margin-top: 0px !important;
+    margin-top: 60px !important;
   }
   .path a {
     font-size: 12px;
@@ -74,11 +74,24 @@
     width: 100% !important;
     height: 500px;
   }
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .col-md-9 {
+    height: 444px;
+  }
+  .product-image .slider-nav .slick-slide {
+    margin-bottom: 0px !important;
+  }
   .sidebar {
     display: none !important;
   }
   .path {
-    margin-top: 0px !important;
+    margin-top: 60px !important;
+  }
+  .slick-list draggable {
+    height: 477px;
   }
   .menu-button {
     display: block !important;
@@ -88,6 +101,12 @@
   }
   .recruitment {
     display: block !important;
+  }
+  .slick-prev, .slick-next {
+    margin-right: 30px;
+  }
+  .slick-arrow {
+    margin-left: 10px;
   }
 }
 * {
@@ -158,6 +177,7 @@
   cursor: pointer;
   padding: 10px;
   z-index: 1001;
+  position: fixed;
   top: 0;
   left: 0;
 }
@@ -185,6 +205,7 @@
 .main {
   display: flex;
   flex-direction: column;
+  width: 98%;
 }
 
 .logo-mb {
@@ -619,8 +640,10 @@
 
 .col-md-3 img {
   margin: 0 auto;
-  width: 60%;
-  height: 50%;
+  width: 65%;
+  height: 65%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 .col-md-3 p {
   font-size: 14px;

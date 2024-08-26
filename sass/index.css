@@ -56,6 +56,7 @@
   cursor: pointer;
   padding: 10px;
   z-index: 1000;
+  position: fixed;
   top: 0;
   left: 0;
 }
@@ -65,13 +66,12 @@
     margin-bottom: 20px;
   }
   .logo-mb {
+    z-index: 1;
     margin: 0 auto;
     display: block !important;
   }
   .logo-mb img {
     width: 100px;
-    position: absolute;
-    margin-left: -40px;
   }
   .sidebar {
     display: none !important;
@@ -116,26 +116,29 @@
     display: none !important;
   }
   .logo-mb {
+    z-index: 1;
     margin: 0 auto;
     display: block !important;
   }
   .logo-mb img {
     width: 100px;
-    position: absolute;
-    margin-left: -40px;
   }
   .menu-button {
     display: block !important;
   }
   .col-md-4 {
-    width: 100% !important;
+    width: 80% !important;
     height: 500px;
+    margin: 0 auto;
   }
   .active {
     display: block !important;
   }
   .recruitment {
     display: block !important;
+  }
+  .recruitment .recruitment-box {
+    margin-bottom: 20px !important;
   }
 }
 * {
@@ -362,8 +365,10 @@
 
 .col-md-3 img {
   margin: 0 auto;
-  width: 60%;
-  height: 50%;
+  width: 65%;
+  height: 65%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 .col-md-3 p {
   font-size: 14px;
@@ -497,7 +502,7 @@ iframe {
 }
 
 .news-box {
-  margin-left: 20px;
+  margin-right: 20px;
   border-radius: 10px;
   background-color: #f5f5f5;
 }
@@ -567,7 +572,7 @@ footer .footer-content .footer-left h2,
 footer .footer-content .footer-right h2 {
   color: #2d8b37;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin: 20px 0px 0px 0px;
   font-weight: bold;
 }
 footer .footer-content .footer-left p {

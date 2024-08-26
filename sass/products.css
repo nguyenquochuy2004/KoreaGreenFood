@@ -29,7 +29,7 @@
     height: 200px !important;
   }
   .path {
-    margin-top: 0px !important;
+    margin-top: 60px !important;
   }
   .slick-arrow {
     right: -13% !important;
@@ -113,16 +113,26 @@
   .active {
     display: block !important;
   }
+  .recruitment .recruitment-box {
+    margin-bottom: 20px !important;
+  }
   .recruitment {
     display: block !important;
   }
   .filter-container {
-    width: 100% !important;
-    margin-left: 90px !important;
-    padding: 0 !important;
+    justify-content: none;
+    padding: 0;
+  }
+  .filter-container .filter-icon {
+    padding: 2px;
+    text-align: center;
+    width: 80px;
+  }
+  .filter-container .filter-right {
+    margin-right: 0 !important;
   }
   .path {
-    margin-top: 0px !important;
+    margin-top: 60px !important;
   }
   .menu .nav-item a {
     font-weight: normal !important;
@@ -146,6 +156,7 @@
 .main {
   display: flex;
   flex-direction: column;
+  width: 98%;
 }
 
 .logo-mb {
@@ -208,6 +219,7 @@
   cursor: pointer;
   padding: 10px;
   z-index: 1000;
+  position: fixed;
   top: 0;
   left: 0;
 }
@@ -511,10 +523,13 @@
 
 .col-md-3 img {
   margin: 0 auto;
-  width: 60%;
-  height: 50%;
+  width: 65%;
+  height: 65%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 .col-md-3 p {
+  margin-top: 20px;
   font-size: 14px;
   color: #373435;
   text-align: center;

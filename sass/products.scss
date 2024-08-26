@@ -39,7 +39,7 @@ $color-name: #2d8b37;
   }
 
   .path {
-    margin-top: 0px !important;
+    margin-top: 60px !important;
   }
 
   .slick-arrow {
@@ -143,18 +143,28 @@ $color-name: #2d8b37;
     display: block !important;
   }
 
+  .recruitment .recruitment-box{
+    margin-bottom: 20px !important;
+  }
   .recruitment {
     display: block !important;
   }
 
   .filter-container {
-    width: 100% !important;
-    margin-left: 90px !important;
-    padding: 0 !important;
+    justify-content: none;
+    padding: 0;
+  }
+  .filter-container .filter-icon{
+    padding: 2px;
+    text-align: center;
+    width: 80px;
+  }
+  .filter-container .filter-right{
+    margin-right: 0 !important;
   }
 
   .path {
-    margin-top: 0px !important;
+    margin-top: 60px !important;
   }
 
   .menu .nav-item a {
@@ -181,6 +191,7 @@ $color-name: #2d8b37;
 .main {
   display: flex;
   flex-direction: column;
+  width: 98%;
 }
 .logo-mb{
   display: none;
@@ -240,7 +251,7 @@ $color-name: #2d8b37;
   cursor: pointer;
   padding: 10px;
   z-index: 1000;
-  // position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
 }
@@ -578,11 +589,13 @@ $color-name: #2d8b37;
 .col-md-3 {
   img {
     margin: 0 auto;
-    width: 60%;
-    height: 50%;
+    width: 65%;
+    height: 65%;
+    object-fit: scale-down;
   }
 
   p {
+    margin-top: 20px;
     font-size: 14px;
     color: $color-text;
     text-align: center;
