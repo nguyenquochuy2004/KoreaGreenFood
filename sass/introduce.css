@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.main-menu {
+  background-color: #333;
+}
+
+.main-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu ul li {
+  float: left;
+  position: relative;
+}
+
+.main-menu a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.main-menu a:hover {
+  background-color: #111;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.sub-menu a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  color: white;
+}
+
+.sub-menu a:hover {
+  background-color: #575757;
+}
+
+.main-menu li:hover .sub-menu {
+  display: block;
+}/*# sourceMappingURL=introduce.css.map */

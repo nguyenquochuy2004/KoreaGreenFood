@@ -1,11 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+.hamburger {
+  display: none !important;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  z-index: 9999;
+
+  .bar {
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background: #000;
+      border-radius: 3px;
+      transition: all .5s;
+
+      &:nth-child(1) {
+          transform: translateY(-10px);
+          width: 20px;
+          left: 10px;
+      }
+
+      &:nth-child(2) {
+          transform: translateY(10px);
+          width: 15px;
+          left: 10px;
+      }
+  }
+
+  &.active {
+      .bar {
+        margin-top: 25px;
+          background: red;
+
+          &:nth-child(1) {
+              width: 30px;
+              transform: translateY(0) rotate(45deg);
+          }
+
+          &:nth-child(2) {
+              width: 30px;
+              transform: translateY(0) rotate(315deg);
+          }
+
+          &:nth-child(3) {
+              transform: translateX(60px);
+          }
+      }
+  }
+}
+
+.header img{
+  display: none;
+}
+
 .menu-mb {
   display: none;
   position: fixed;
   top: 0;
   left: -250px;
-  width: 250px;
+  width: 50%;
   height: 100%;
   background-color: #3c9d3e;
   padding-top: 60px;
@@ -30,7 +88,7 @@
 
 .menu-mb li a:hover {
   background: none ;
-  color: #c5d557;
+  color: #d1db91;
 }
 
 .overlay {
@@ -48,38 +106,44 @@
 .overlay.active {
   display: block;
 }
-.menu-button {
-  z-index: 9999 !important;
-  display: none;
-  font-size: 30px;
-  color: #333;
-  cursor: pointer;
-  padding: 10px;
-  z-index: 1000;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
 
 @media only screen and (max-width: 46.1875em) {
-  .recruitment .recruitment-box{
-    margin-bottom: 20px;
+  .autoplay img{
+    margin-top:50px;
+  }
+  .slick-arrow.slick-prev, .slick-arrow.slick-next{
+    margin-right: 20px;
+  }
+
+  .header{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.395);
+    z-index: 9999;
+    display: flex !important;
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    
+      img{
+        margin-left: 25%;
+        width: 80px;
+        display: block !important;
+      }
+  }
+  .hamburger{
+    display: flex !important;
   }
   .logo-mb{
     z-index: 1;
     margin: 0 auto;
     display: block !important;
   }
-  .logo-mb img{
-    width: 100px;
-  }
   .sidebar{
     display: none !important;
   }
-
-  .menu-button {
-    display: block;
-}
+  
+  .recruitment .recruitment-box{
+    margin-bottom: 20px;
+  }
   .icon-home {
     display: none !important;
   }
@@ -125,13 +189,34 @@
     display: none !important;
   }
 
+  .autoplay img{
+    margin-top:50px;
+  }
+  .slick-arrow.slick-prev, .slick-arrow.slick-next{
+    margin-right: 20px;
+  }
+
+  .header{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.395);
+    z-index: 9999;
+    display: flex !important;
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    
+      img{
+        margin-left: 40%;
+        width: 80px;
+        display: block !important;
+      }
+  }
+  .hamburger{
+    display: flex !important;
+  }
   .logo-mb{
     z-index: 1;
     margin: 0 auto;
     display: block !important;
-  }
-  .logo-mb img{
-    width: 100px;
   }
 
   .menu-button{
@@ -268,11 +353,9 @@
 .autoplay {
   width: 100%;
   margin: 0 auto;
-  // padding-top: 50px;
 
   img {
     width: 100%;
-    height: auto;
     display: block;
   }
 }
@@ -424,7 +507,7 @@
 
   &.slick-prev,
   &.slick-next {
-    background: #fff !important;
+    background: #ffffff00 !important;
     color: #c5d557;
     border: none;
     width: 40px;

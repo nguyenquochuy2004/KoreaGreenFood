@@ -16,22 +16,28 @@
 
 <body>
     <div class="main">
-        <div class="logo-mb">
-            <img src="img/logo.jpg" alt="logo">
+        <div class="header">
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        <div class="menu-button"><i class="fa-solid fa-bars"></i></div>
+                <img src="img/logo.jpg" alt="logo">
+            </div>
+        </div>
+
         <div class="overlay"></div>
-    
+        
         <div class="menu-mb">
-            <li class="nav-item"><a href="">Giới Thiệu</a></li>
+            <li class="nav-item"><a href="#">Giới Thiệu</a></li>
             <li class="nav-item"><a href="detail.html">Hoạt Động Doanh Nghiệp</a></li>
             <li class="nav-item"><a href="products.html">Sản Phẩm</a></li>
-            <li class="nav-item"><a href="">Tin Tức</a></li>
-            <li class="nav-item"><a href="">Tuyển Dụng</a></li>
-            <li class="nav-item"><a href="">Đối Tác</a></li>
-            <li class="nav-item"><a href="">Video</a></li>
-            <li class="nav-item"><a href="">Liên Hệ</a></li>
-            <li class="nav-item"><a href=""><i class="fa-light fa-magnifying-glass"></i></a></li>
+            <li class="nav-item"><a href="#">Tin Tức</a></li>
+            <li class="nav-item"><a href="#">Tuyển Dụng</a></li>
+            <li class="nav-item"><a href="#">Đối Tác</a></li>
+            <li class="nav-item"><a href="#">Video</a></li>
+            <li class="nav-item"><a href="#">Liên Hệ</a></li>
+            <li class="nav-item"><a href="#"><i class="fa-light fa-magnifying-glass"></i></a></li>
         </div>
         <div class="sidebar">
             <img class="logo" src="img/logo.jpg" alt="logo">
@@ -285,15 +291,27 @@
     <script src="./scripts/certification.js"></script>
     <script src="./scripts/partner.js"></script>
     <script>
-                $(".menu-button").click(function () {
-            $(".menu-mb").toggleClass("active");
-            $(".overlay").toggleClass("active");
-        });
+        //         $(".menu-button").click(function () {
+        //     $(".menu-mb").toggleClass("active");
+        //     $(".overlay").toggleClass("active");
+        // });
 
-        $(".overlay").click(function () {
-            $(".menu-mb").removeClass("active");
-            $(".overlay").removeClass("active");
-        });
+        // $(".overlay").click(function () {
+        //     $(".menu-mb").removeClass("active");
+        //     $(".overlay").removeClass("active");
+        // });
+
+    $(".hamburger").click(function () {
+        $(this).toggleClass("active");
+        $(".menu-mb").toggleClass("active");
+        $(".overlay").toggleClass("active");
+    });
+
+    $(".overlay").click(function () {
+        $(".hamburger").removeClass("active");
+        $(".menu-mb").removeClass("active");
+        $(".overlay").removeClass("active");
+    });
     </script>
     
 </body>
